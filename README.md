@@ -8,7 +8,8 @@ Main difference has been the decision to utilize Servlets as a way of displaying
 
 # Citations:
 
-- https://www.javahelps.com/2015/04/java-web-application-hello-world.html?m=1
+- Java Servlet Tutorial: https://www.javahelps.com/2015/04/java-web-application-hello-world.html?m=1
+- GitIgnore Structure: https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
 
 # License:
 
