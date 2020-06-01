@@ -9,3 +9,13 @@ table
     margin: auto;
     float: center;
 }
+
+iframe
+{
+	width: 90%;
+	margin: auto;
+	float: center;
+	align: center;
+	height: 100%;
+	border:none;
+}

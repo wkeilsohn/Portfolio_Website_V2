@@ -6,6 +6,11 @@ Second attempt at using java to build a portfolio website.
 
 Main difference has been the decision to utilize Servlets as a way of displaying different web pages. 
 
+# Old Repository:
+
+You can find the old repository here:
+https://github.com/wkeilsohn/Portfolio_Website
+
 # Citations:
 
 - Java Servlet Tutorial: https://www.javahelps.com/2015/04/java-web-application-hello-world.html?m=1

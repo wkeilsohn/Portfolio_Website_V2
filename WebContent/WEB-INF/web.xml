@@ -17,7 +17,7 @@
 
 	<servlet-mapping>
 		<servlet-name>SecondPortfolioWebsite</servlet-name>
-		<url-pattern>/SecondPortfolioWebsite</url-pattern>
+		<url-pattern>/Chart</url-pattern>
 	</servlet-mapping>
   
 </web-app>

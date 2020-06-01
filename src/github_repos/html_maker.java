@@ -51,7 +51,7 @@ public class html_maker {
     }
 
     public String makeHTML(Vector j_reps){
-        String table_head = "<table><tr><th>Project Name</th><th>Created:</th><th>Last Updated</th><tr>";
+        String table_head = "<table><tr><th>Project Name:</th><th>Created:</th><th>Last Updated:</th><tr>";
         String table_footing = "</table>";
         String body = makeTableContents(j_reps);
         String table = new StringBuilder().append(table_head).append(body).append(table_footing).toString();

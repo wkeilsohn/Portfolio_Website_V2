@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/SecondPortfolioWebsite")
+@WebServlet("/Chart")
 public class SecondPortfolioWebsite extends HttpServlet {	
 	private static final long serialVersionUID = 1L;
 
@@ -29,7 +29,9 @@ public class SecondPortfolioWebsite extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		gitrepo_main git_table = new gitrepo_main();
-		out.print("<html><body>" +
+		out.print("<html>" +
+		"<head><link rel=\"stylesheet\" href=\"index.css\" type=\"text/css\"></head>" +
+		"<body>" +
 		git_table.HTMLPrinter() + 
 		"</body></html>");
 		out.close();
