@@ -7,7 +7,7 @@ import java.util.Vector;
 
 public class html_maker {
 
-    DateFormat date_format = new SimpleDateFormat("mm-dd-yyyy");
+    DateFormat date_format = new SimpleDateFormat("MM-dd-yyyy");
 
     public String linkMaker(String ttl, String url){ // Don't really need url...
     	String url2 = new StringBuilder().append("https://github.com/wkeilsohn/").append(ttl).toString();
@@ -53,7 +53,7 @@ public class html_maker {
     }
 
     public String makeHTML(Vector j_reps){
-        String table_head = "<table><tr><th>Project Name:</th><th>Created:</th><th>Last Updated:</th><tr>";
+        String table_head = "<table><tr><th>Project Name:</th><th>Last Updated:</th><th>Created:</th><tr>";
         String table_footing = "</table>";
         String body = makeTableContents(j_reps);
         String table = new StringBuilder().append(table_head).append(body).append(table_footing).toString();
