@@ -4,12 +4,14 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Vector;
 
+
 public class html_maker {
 
     DateFormat date_format = new SimpleDateFormat("mm-dd-yyyy");
 
-    public String linkMaker(String ttl, String url){
-        String link_str = new StringBuilder().append("<a class='gitrepo_id' href = '").append(url).append("'>").append(ttl).append("</a>").toString();
+    public String linkMaker(String ttl, String url){ // Don't really need url...
+    	String url2 = new StringBuilder().append("https://github.com/wkeilsohn/").append(ttl).toString();
+        String link_str = new StringBuilder().append("<a class='gitrepo_id' href = '").append(url2).append("'>").append(ttl).append("</a>").toString();
         String link_column = new StringBuilder().append("<td>").append(link_str).append("</td>").toString();
         return link_column;
     }
