@@ -13,6 +13,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/Chart")
 public class SecondPortfolioWebsite extends HttpServlet {	
+	
+	String head = new String("<html><head><link rel=\"stylesheet\" href=\"index.css\" type=\"text/css\"></head><body>");
+	String tail = new String("</body></html>");
+	
 	private static final long serialVersionUID = 1L;
 
     /**
@@ -29,11 +33,9 @@ public class SecondPortfolioWebsite extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		gitrepo_main git_table = new gitrepo_main();
-		out.print("<html>" +
-		"<head><link rel=\"stylesheet\" href=\"index.css\" type=\"text/css\"></head>" +
-		"<body>" +
+		out.print(head +
 		git_table.HTMLPrinter() + 
-		"</body></html>");
+		tail);
 		out.close();
 	}
 
