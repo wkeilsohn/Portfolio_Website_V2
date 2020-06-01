@@ -10,6 +10,7 @@ local.properties
 .loadpath
 .recommenders
 .jar
+/lib
 
 # External tool builders
 .externalToolBuilders/
